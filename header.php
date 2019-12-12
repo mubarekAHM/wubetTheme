@@ -23,9 +23,28 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site container">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wubettheme' ); ?></a>
+		<nav id="site-navigation"  class="navbar navbar-expand-md navbar-dark bg-dark">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<?php
+		wp_nav_menu([
+			'menu'      =>  'primary',
+			'theme_location'    =>  'primary',
+			'container'         =>  'div',
+			'container_id'      =>  'bs4navbar',
+			'container_class'   =>  'collapse navbar-collapse',
+			'menu_id'           =>  'primary-menu',
+			'menu_class'        =>  'navbar-nav ml-auto',
+			'depth'             =>    2,
+			'fallback_cb'   =>    'bs4navwalker::fallback',
+			'walker'   =>    new bs4navwalker()
+
+		]);
+		?>
+		</nav>
 
 	<header id="masthead" class="site-header">
-	<nav id="menu" class="navbar-expand-md navbar-light" role="navigation">
 		<div class="site-branding navbar-brand">
 			<?php
 			the_custom_logo();
@@ -45,25 +64,6 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-		</button>
-		<?php
-		wp_nav_menu([
-			'menu'      =>  'primary',
-			'theme_location'    =>  'primary',
-			'container'         =>  'div',
-			'container_id'      =>  'bs4navbar',
-			'container_class'   =>  'collapse navbar-collapse',
-			'menu_id'           =>  'main-menu',
-			'menu_class'        =>  'navbar-nav ml-auto',
-			'depth'             =>    2,
-			'fallback_cb'   =>    'bs4navwalker::fallback',
-			'walker'   =>    new bs4navwalker()
-
-		]);
-		?>
-		</nav>
   
 
 	</header><!-- #masthead -->

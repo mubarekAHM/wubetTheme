@@ -115,7 +115,7 @@ function wubettheme_scripts() {
 	wp_register_script(  'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js', false, '', true );
 
 	wp_enqueue_script( 'popper' );
-	
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/src/js/bootstrap.bundle.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'wubettheme-tether', get_template_directory_uri() . '/src/js/tether.min.js', array(), '20170915', true );
 	wp_enqueue_script( 'wubettheme-bootstrap', get_template_directory_uri() . '/src/js/bootstrap.min.js',array('jquery'), '20170915', true );
 	wp_enqueue_script( 'wubettheme-bootstrap-hover', get_template_directory_uri() . '/src/js/bootstrap-hover.js',array('jquery'), '20170115', true );
@@ -167,4 +167,3 @@ require get_template_directory() . '/inc/bootstrap-wp-navwalker.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
