@@ -14,6 +14,38 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer row">
+	
+    <div class="container-fluid text-center text-md-left">
+      <div id="footer-sidebar" class="secondary">
+        <div id="footer-sidebar1">
+        <?php
+        if(is_active_sidebar('footer-sidebar-1')){
+        dynamic_sidebar('footer-sidebar-1');
+        }
+        ?>
+        </div>
+        <div id="footer-sidebar2">
+        <?php
+        if(is_active_sidebar('footer-sidebar-2')){
+        dynamic_sidebar('footer-sidebar-2');
+        }
+        ?>
+        </div>
+        <div id="footer-sidebar3">
+        <?php
+        if(is_active_sidebar('footer-sidebar-3')){
+        dynamic_sidebar('footer-sidebar-3');
+        }
+        ?>
+		</div>
+		<div id="footer-sidebar4">
+        <?php
+        if(is_active_sidebar('footer-sidebar-4')){
+        dynamic_sidebar('footer-sidebar-4');
+        }
+        ?>
+        </div>
+      </div>
 		<div class="site-info col-md-12">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wubettheme' ) ); ?>">
 				<?php
