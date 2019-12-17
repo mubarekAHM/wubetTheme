@@ -4,7 +4,7 @@ Theme URI: http://WubetTheme.com/
 Author: Underscores.me
 Author URI: http://mubarek.com/
 Description: Description
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: wubettheme
@@ -197,12 +197,29 @@ figure {
 	/* Extra wide images within figure tags don't overflow the content area. */
 }
 
+.cat-links, .tags-links {
+	margin-right: 20px;
+}
+
+.cat-links a, .tags-links a, .edit-link a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #2980b9;
+}
+.cat-links a:focus, .cat-links a:hover, .tags-links a:focus, .tags-links a:hover, .edit-link a:focus, .edit-link a:hover {
+	border-bottom: solid 1px #2980b9;
+}
+
+
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
 }
 h1.entry-title, h2.entry-title {
-	margin-top: 1em;
+	margin-top: 1em;  
+}
+footer {
+	margin-top: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -283,6 +300,8 @@ textarea:focus {
 
 select {
 	border: 1px solid #ccc;
+	padding: 10px;
+	width: 100%;
 }
 
 textarea {
