@@ -502,6 +502,8 @@ a:hover, a:active {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
 	margin: 0 0 1.5em;
 	/* Make sure select elements fit in widgets. */
 }
@@ -679,3 +681,33 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+#footer-sidebar {
+	background-color: #fbfbfb;
+	border-top: 1px solid #eee;
+	display:block;
+	height: 250px;
+}
+
+#footer-sidebar1 {
+	float: left;
+	width: 360px;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+#footer-sidebar2 {
+	float: left;
+	width: 360px;
+	margin-right:5px;
+}
+
+#footer-sidebar3 {
+	float: left;
+	width: 360px;
+	
+}
+
+
+
+

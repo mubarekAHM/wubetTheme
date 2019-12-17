@@ -37,14 +37,6 @@
         dynamic_sidebar('footer-sidebar-3');
         }
         ?>
-		</div>
-		<div id="footer-sidebar4">
-        <?php
-        if(is_active_sidebar('footer-sidebar-4')){
-        dynamic_sidebar('footer-sidebar-4');
-        }
-        ?>
-        </div>
       </div>
 		<div class="site-info col-md-12">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wubettheme' ) ); ?>">
