@@ -9,7 +9,7 @@ function wubettheme_widgets_init() {
 		'name'          => esc_html__( 'Right Sidebar', 'wubettheme' ),
 		'id'            => 'right-sidebar',
 		'description'   => esc_html__( 'Add widgets here.', 'wubettheme' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'before_widget' => '<section id="%1$s" class="widget list-type5 %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
