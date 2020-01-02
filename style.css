@@ -143,6 +143,8 @@ h1.site-title, p.site-title {
 	line-height: 1em;
 	font-size: 30px;
 	letter-spacing: 1px;
+	padding-left: 30px;
+	background-color: antiquewhite;
 }
 .site-title a {
 	margin: 0;
@@ -217,7 +219,10 @@ table {
 	width: 100%;
 }
 h1.entry-title, h2.entry-title {
+	padding-left: 30px;
 	margin-top: 1em;  
+	background-color: antiquewhite;
+	margin-right: 400px;
 }
 footer {
 	margin-top: 20px;
@@ -363,7 +368,7 @@ a:hover, a:active {
 
 .navbar {
 	padding-left: 0;
-	padding-right: 0;
+	padding-right: 50px;
 }
 
 .open > .dropdown-menu {
@@ -687,6 +692,7 @@ object {
 	border-top: 1px solid #eee;
 	display:block;
 	height: 250px;
+	background-color: lavender;
 }
 
 #footer-sidebar1 {
@@ -695,7 +701,6 @@ object {
 	margin-left:5px;
 	margin-right:5px;
 	border-left: 5px solid #aaa;
-	border-bottom: 5px solid #aaa;
 }
 
 #footer-sidebar2 {
@@ -703,14 +708,12 @@ object {
 	width: 360px;
 	margin-right:5px;
 	border-left: 5px solid #aaa;
-	border-bottom: 5px solid #aaa;
 }
 
 #footer-sidebar3 {
 	float: left;
 	width: 360px;
 	border-left: 5px solid #aaa;
-	border-bottom: 5px solid #aaa;
 }
 .list-type5 {
 	border-bottom: 5px solid #aaa;
@@ -737,7 +740,9 @@ object {
 	color: gray;
 }
 .widget-title{
-	margin-left: 80px;
+	
+	text-align: -moz-center;
+	background-color: thistle;
 	margin-bottom: 20px;
 	margin-top: 15px;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -745,4 +750,17 @@ object {
 }
 .widget-title ul{
 	list-style-type: none;
+}
+#site-navigation{
+	background-color: teal;
+}
+.page-title{
+	background-color:#f51818;
+	margin-right: 530px;
+}
+.widgettitle{
+	background-color: thistle;
+	padding-left: 40px;
+	margin-right: 700px;
+
 }

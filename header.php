@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site container">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wubettheme' ); ?></a>
-		<nav id="site-navigation"  class="navbar navbar-expand-md navbar-light bg-light">
+		<nav id="site-navigation"  class="navbar navbar-expand-md navbar-light">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 		</button>
