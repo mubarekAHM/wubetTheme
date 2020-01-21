@@ -38,6 +38,8 @@
         }
         ?>
       </div>
+    </div>
+    </div>
 		<div class="site-info col-md-12">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wubettheme' ) ); ?>">
 				<?php
