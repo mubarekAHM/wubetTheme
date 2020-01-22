@@ -11,7 +11,7 @@ function wubettheme_widgets_init() {
 		'description'   => esc_html__( 'Add widgets here.', 'wubettheme' ),
 		'before_widget' => '<section id="%1$s" class="widget list-type5 %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
+		'before_title'  => '<div class="side"><h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 	

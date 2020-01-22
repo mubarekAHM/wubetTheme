@@ -139,12 +139,16 @@ hr {
 
 h1.site-title, p.site-title {
 	margin: 10px 0 0 -2px;
-	padding: 0;
 	line-height: 1em;
-	font-size: 30px;
+	font-size: 40px;
 	letter-spacing: 1px;
 	padding-left: 30px;
 	background-color: antiquewhite;
+	display: inline-block;
+	padding-right: 40px;
+}
+h1.site-title:hover, p.site-title:hover{
+	background-color: darkcyan;
 }
 .site-title a {
 	margin: 0;
@@ -223,7 +227,15 @@ h1.entry-title, h2.entry-title {
 	margin-top: 1em;  
 	background-color: antiquewhite;
 	margin-right: 400px;
+	font-family: franklin gothic medium;
+	display: inline-block;
+	padding-right: 30px;
 }
+h1.entry-title:hover, h2.entry-title:hover{
+	background-color: darkcyan;
+}
+
+
 footer {
 	margin-top: 20px;
 }
@@ -322,15 +334,16 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: darkcyan;
 }
 
 a:visited {
-	color: purple;
+	color: darkcyan;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: antiquewhite;
+	text-decoration: none;
 }
 
 a:focus {
@@ -699,23 +712,23 @@ object {
 	width: 360px;
 	margin-left:5px;
 	margin-right:5px;
-	border-left: 5px solid #aaa;
+
 }
 
 #footer-sidebar2 {
 	float: left;
 	width: 360px;
 	margin-right:5px;
-	border-left: 5px solid #aaa;
+
 }
 
 #footer-sidebar3 {
 	float: left;
 	width: 360px;
-	border-left: 5px solid #aaa;
+
 }
 #colophon{
-	background-color:aquamarine;
+	background-color:lavenderblush;
 }
 .list-type5 {
 	border-bottom: 5px solid #aaa;
@@ -745,7 +758,6 @@ object {
 	text-align: -moz-center;
 	background-color: thistle;
 	margin-bottom: 20px;
-	margin-top: 15px;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	
 }
@@ -763,6 +775,14 @@ object {
 .navbar-light .navbar-nav .nav-link{
 	color: aliceblue;
 }
+.footer-widget{
+	border: solid;
+	border-width: 2px;
+	border-radius:12px;
+	padding: 5px;
+	color: rgba(27, 30, 49, 0.933);
+	box-shadow: #888 8px 5px;
+}
 .footer-widget ul{
 	list-style-type: none;
 	font-size: 15px;
@@ -770,9 +790,7 @@ object {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
-.footer-widget ul li{
 
-}
 .footer-widget ul li a{
 	color: rgb(80, 77, 75);
 
@@ -781,6 +799,7 @@ object {
 	color: gray;
 }
 .footer-widget-title{
+	
 	text-align: -moz-center;
 	background-color: thistle;
 	margin-bottom: 20px;
@@ -788,3 +807,33 @@ object {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
+
+.dropdown-item{
+	background-color: teal;
+}
+
+.dropdown-item:link,.dropdown-item:active,.dropdown-item:visited{
+	color: aliceblue;
+}
+.dropdown-item:link:hover,.dropdown-item:active:hover,.dropdown-item:visited:hover{
+	color:teal;
+	background-color: aliceblue;
+
+}
+.side{
+	border: solid;
+	border-width: 2px;
+	border-radius:12px;
+	padding: 5px;
+	color: rgba(27, 30, 49, 0.933);
+	box-shadow: #888 8px 5px;
+  }
+  .calendar_wrap{
+	border: solid;
+	border-width: 2px;
+	border-radius:12px;
+	padding: 5px;
+	color: rgba(27, 30, 49, 0.933);
+	box-shadow: #888 8px 5px;
+  }
+ 
