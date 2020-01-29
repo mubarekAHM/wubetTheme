@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package wubetTheme
+ * @package webet
  */
 
 ?>
@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site container">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wubettheme' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'webet' ); ?></a>
 		<nav id="site-navigation"  class="navbar navbar-expand-md navbar-light">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -57,10 +57,10 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
-			$wubettheme_description = get_bloginfo( 'description', 'display' );
-			if ( $wubettheme_description || is_customize_preview() ) :
+			$webet_description = get_bloginfo( 'description', 'display' );
+			if ( $webet_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $wubettheme_description; /* WPCS: xss ok. */ ?></p>
+				<p class="site-description"><?php echo $webet_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 

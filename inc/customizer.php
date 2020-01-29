@@ -1,8 +1,8 @@
 <?php
 /**
- * wubetTheme Theme Customizer
+ * webet Theme Customizer
  *
- * @package wubetTheme
+ * @package webet
  */
 
 /**
@@ -10,7 +10,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function wubettheme_customize_register( $wp_customize ) {
+function webet_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -18,22 +18,22 @@ function wubettheme_customize_register( $wp_customize ) {
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(
 			'selector'        => '.site-title a',
-			'render_callback' => 'wubettheme_customize_partial_blogname',
+			'render_callback' => 'webet_customize_partial_blogname',
 		) );
 		$wp_customize->selective_refresh->add_partial( 'blogdescription', array(
 			'selector'        => '.site-description',
-			'render_callback' => 'wubettheme_customize_partial_blogdescription',
+			'render_callback' => 'webet_customize_partial_blogdescription',
 		) );
 	}
 }
-add_action( 'customize_register', 'wubettheme_customize_register' );
+add_action( 'customize_register', 'webet_customize_register' );
 
 /**
  * Render the site title for the selective refresh partial.
  *
  * @return void
  */
-function wubettheme_customize_partial_blogname() {
+function webet_customize_partial_blogname() {
 	bloginfo( 'name' );
 }
 
@@ -42,14 +42,14 @@ function wubettheme_customize_partial_blogname() {
  *
  * @return void
  */
-function wubettheme_customize_partial_blogdescription() {
+function webet_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function wubettheme_customize_preview_js() {
-	wp_enqueue_script( 'wubettheme-customizer', get_template_directory_uri() . '/dist/js/customizer.js', array( 'customize-preview' ), '20151215', true );
+function webet_customize_preview_js() {
+	wp_enqueue_script( 'webet-customizer', get_template_directory_uri() . '/dist/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
-add_action( 'customize_preview_init', 'wubettheme_customize_preview_js' );
+add_action( 'customize_preview_init', 'webet_customize_preview_js' );

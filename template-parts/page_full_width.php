@@ -1,11 +1,10 @@
 <?php
 /**
- * Template Name: Full Width Template
- * Template Post Type: Post without sidebar
- * 
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ * Template Name: Full Width Page
  *
- * @package wubetTheme
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package webet
  */
 
 get_header();
@@ -18,9 +17,7 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/content', get_post_type() );
-
-			the_post_navigation();
+			get_template_part( 'template-parts/content', 'page' );
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :

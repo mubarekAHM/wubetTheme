@@ -4,11 +4,11 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function wubettheme_widgets_init() {
+function webet_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Right Sidebar', 'wubettheme' ),
+		'name'          => esc_html__( 'Right Sidebar', 'webet' ),
 		'id'            => 'right-sidebar',
-		'description'   => esc_html__( 'Add widgets here.', 'wubettheme' ),
+		'description'   => esc_html__( 'Add widgets here.', 'webet' ),
 		'before_widget' => '<section id="%1$s" class="widget list-type5 %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<div class="side"><h2 class="widget-title">',
@@ -44,4 +44,4 @@ function wubettheme_widgets_init() {
 		  ) );
 
 }
-add_action( 'widgets_init', 'wubettheme_widgets_init' );
+add_action( 'widgets_init', 'webet_widgets_init' );

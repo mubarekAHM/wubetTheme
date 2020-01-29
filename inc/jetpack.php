@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package wubetTheme
+ * @package webet
  */
 
 /**
@@ -14,11 +14,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function wubettheme_jetpack_setup() {
+function webet_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'wubettheme_infinite_scroll_render',
+		'render'    => 'webet_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
@@ -28,7 +28,7 @@ function wubettheme_jetpack_setup() {
 	// Add theme support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
 		'post-details'    => array(
-			'stylesheet' => 'wubettheme-style',
+			'stylesheet' => 'webet-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',
@@ -42,12 +42,12 @@ function wubettheme_jetpack_setup() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'wubettheme_jetpack_setup' );
+add_action( 'after_setup_theme', 'webet_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function wubettheme_infinite_scroll_render() {
+function webet_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :
