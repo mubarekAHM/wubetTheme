@@ -223,6 +223,7 @@ table {
 	width: 100%;
 }
 h1.entry-title, h2.entry-title {
+	color: darkcyan;
 	padding-left: 30px;
 	margin-top: 1em;  
 	background-color: antiquewhite;
@@ -232,7 +233,9 @@ h1.entry-title, h2.entry-title {
 	padding-right: 30px;
 }
 h1.entry-title:hover, h2.entry-title:hover{
+	color: antiquewhite;
 	background-color: darkcyan;
+	
 }
 
 
